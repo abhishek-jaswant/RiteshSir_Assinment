@@ -1,37 +1,87 @@
 body {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f8fb;
     padding: 20px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
 
-th,
-td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
-th {
-    cursor: pointer;
-    background: #f4f4f4;
+h1 {
+    text-align: center;
+    color: #333;
 }
 
 .controls {
     display: flex;
     gap: 10px;
+    margin-bottom: 15px;
 }
+
+.controls input,
+.controls select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+
+th {
+    cursor: pointer;
+    background: #4a6cf7;
+    color: white;
+    transition: background 0.2s;
+}
+
+th:hover {
+    background: #3a55c9;
+}
+
+
+tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tbody tr:hover {
+    background: #eef2ff;
+}
+
 
 #pagination {
     margin-top: 20px;
+    text-align: center;
 }
 
 button {
-    padding: 6px 10px;
-    margin: 3px;
+    padding: 7px 12px;
+    margin: 4px;
+    border: none;
+    border-radius: 4px;
+    background: #4a6cf7;
+    color: white;
     cursor: pointer;
+}
+
+button:hover {
+    background: #324ec7;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
 }
